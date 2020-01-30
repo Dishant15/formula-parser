@@ -7,7 +7,8 @@ export default function func(first, ...rest) {
   const result = rest.reduce((acc, value) => acc / toNumber(value), toNumber(first));
 
   if (result === Infinity) {
-    throw Error(ERROR_DIV_ZERO);
+    console.log("There is a divide by zero OP!!")
+    // throw Error(ERROR_DIV_ZERO);
   }
   if (isNaN(result)) {
     throw Error(ERROR_VALUE);
