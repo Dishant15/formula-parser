@@ -12128,7 +12128,7 @@ function func(first) {
   }, (0, _number.toNumber)(first));
 
   if (result === Infinity) {
-    throw Error(_error.ERROR_DIV_ZERO);
+    // throw Error(ERROR_DIV_ZERO);
   }
   if (isNaN(result)) {
     throw Error(_error.ERROR_VALUE);
